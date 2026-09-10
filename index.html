@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>3D Model</title>
+
+    <script type="module"
+        src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+    </script>
+
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: transparent;
+        }
+
+        model-viewer {
+            width: 100%;
+            height: 100vh;
+            background: transparent;
+        }
+    </style>
+</head>
+
+<body>
+
+    <model-viewer
+        src="arunangshubanerjee-taxi-2087.glb"
+        alt="Interactive 3D Model"
+        camera-controls
+        auto-rotate
+        autoplay
+        shadow-intensity="1"
+        exposure="1"
+        environment-image="neutral"
+        interaction-prompt="none">
+    </model-viewer>
+
+</body>
+</html>
